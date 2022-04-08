@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FD7F8EA2800BF0700B7820F /* HuluPorcelain.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7F8E92800BF0700B7820F /* HuluPorcelain.rcproject */; };
 		7F1CBA3C2800B9A7004BFE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CBA3B2800B9A7004BFE71 /* AppDelegate.swift */; };
 		7F1CBA3E2800B9A7004BFE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CBA3D2800B9A7004BFE71 /* ContentView.swift */; };
-		7F1CBA402800B9A7004BFE71 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CBA3F2800B9A7004BFE71 /* Experience.rcproject */; };
 		7F1CBA422800B9A8004BFE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CBA412800B9A8004BFE71 /* Assets.xcassets */; };
 		7F1CBA452800B9A8004BFE71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CBA442800B9A8004BFE71 /* Preview Assets.xcassets */; };
 		7F1CBA4C2800BA66004BFE71 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7F1CBA4B2800BA66004BFE71 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FD7F8E92800BF0700B7820F /* HuluPorcelain.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = HuluPorcelain.rcproject; sourceTree = SOURCE_ROOT; };
 		7F1CBA382800B9A7004BFE71 /* NYU-Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYU-Landmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1CBA3B2800B9A7004BFE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F1CBA3D2800B9A7004BFE71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7F1CBA3F2800B9A7004BFE71 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		7F1CBA412800B9A8004BFE71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1CBA442800B9A8004BFE71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F1CBA4B2800BA66004BFE71 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				7F1CBA3B2800B9A7004BFE71 /* AppDelegate.swift */,
 				7F1CBA3D2800B9A7004BFE71 /* ContentView.swift */,
-				7F1CBA3F2800B9A7004BFE71 /* Experience.rcproject */,
+				3FD7F8E92800BF0700B7820F /* HuluPorcelain.rcproject */,
 				7F1CBA412800B9A8004BFE71 /* Assets.xcassets */,
 				7F1CBA432800B9A8004BFE71 /* Preview Content */,
 			);
@@ -146,7 +146,7 @@
 			files = (
 				7F1CBA3E2800B9A7004BFE71 /* ContentView.swift in Sources */,
 				7F1CBA3C2800B9A7004BFE71 /* AppDelegate.swift in Sources */,
-				7F1CBA402800B9A7004BFE71 /* Experience.rcproject in Sources */,
+				3FD7F8EA2800BF0700B7820F /* HuluPorcelain.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

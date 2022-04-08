@@ -1,6 +1,6 @@
-# NYU-VirtualNotes
+# NYU-Landmarks
 
-This project uses RealityKit and Reality Composer to make virtual notes for a printer. 
+This project uses RealityKit and Reality Compose 
 
  Currently this project attaches to a horizontal plane, but will work on having it recognize and attach to an object using apple's ARObjectAnchor [Sample Project that can create .arobject files](https://developer.apple.com/documentation/arkit/content_anchors/scanning_and_detecting_3d_objects) 
 

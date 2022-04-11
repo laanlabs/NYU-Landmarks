@@ -3,24 +3,53 @@
 //  NYU-Landmarks
 //
 //  Created by jclaan on 4/8/22.
+//  Updated by Cleo on 4/10/22
 //
 
 import SwiftUI
 import RealityKit
 
+/* @Cleo ContentView with Navigation*/
 struct ContentView : View {
     var body: some View {
-        ZStack(alignment: .bottom) {
-            
-            ARViewContainer()
-            
-            ControlView()
-            
+        NavigationView{
+            VStack{
+                NavigationLink(destination:ARViewTest(), label: {Text("Next")})
+                
+                ControlView()
+                
+            }
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
+/* @Cleo Second Navigation Page*/
+struct ARViewTest: View{
+        var body: some View {
+            ZStack(alignment: .bottom) {
+    
+                ARViewContainer()
+    
+                ControlView()
+    
+            }
+            .edgesIgnoringSafeArea(.all)
+        }
+}
+
+/* Original ContentView */
+//struct ContentView : View {
+//    var body: some View {
+//        ZStack(alignment: .bottom) {
+//
+//            ARViewContainer()
+//
+//            ControlView()
+//
+//        }
+//        .edgesIgnoringSafeArea(.all)
+//    }
+//}
 
 struct ARViewContainer: UIViewRepresentable {
     

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yNM-JM-S6b">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="viW-aq-67h">
+            <objects>
+                <viewController id="Gra-Aw-I1R" customClass="HomeViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Njc-Aw-35a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruw-EG-Lb4">
+                                <rect key="frame" x="129.5" y="545" width="155" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Wing on Wo">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="9Im-as-E3m" kind="show" id="JBc-QA-GjB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mZ4-Sp-EMX"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ruw-EG-Lb4" firstAttribute="centerY" secondItem="Njc-Aw-35a" secondAttribute="centerY" constant="119" id="hv6-o2-nI7"/>
+                            <constraint firstItem="ruw-EG-Lb4" firstAttribute="centerX" secondItem="Njc-Aw-35a" secondAttribute="centerX" id="rfz-1q-lvH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="O5f-3k-lwk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6C-vV-YDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1462.3188405797102" y="83.705357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4xh-8y-6Gs">
+            <objects>
+                <viewController id="9Im-as-E3m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Oa-Om-VL5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-fs-gum">
+                                <rect key="frame" x="47" y="451" width="320" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="DSj-nk-ANy"/>
+                                    <constraint firstAttribute="width" constant="320" id="DVC-Mc-Bx5"/>
+                                </constraints>
+                                <string key="text">Wing on Wo &amp; Co. (W.O.W.) is the oldest continuously operating store in Manhattan’s Chinatown boasting a five-generation long legacy in the heart of the neighborhood on Mott St. We sell primarily porcelain ware and cultural goods. The shop works to breathe new life into cultural craft by reinterpreting tradition through an Asian American lens.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wing-on-Wo" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-BV-nYE">
+                                <rect key="frame" x="46" y="147.5" width="308" height="201"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDu-Pb-qge">
+                                <rect key="frame" x="101" y="760" width="199" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="09K-4A-XaA"/>
+                                    <constraint firstAttribute="width" constant="199" id="XL4-7x-VwU"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AR Experience" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.75077491569999999" green="0.53477097620000003" blue="0.80050664159999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3CK-k3-qI9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a9t-35-mph"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b8m-BV-nYE" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" constant="-7" id="Duy-cq-7CC"/>
+                            <constraint firstItem="b8m-BV-nYE" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="-200" id="GCZ-cW-lFI"/>
+                            <constraint firstItem="mDu-Pb-qge" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" constant="-6.5" id="J2w-Ny-Jrw"/>
+                            <constraint firstItem="mDu-Pb-qge" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="337" id="KLB-cD-gLV"/>
+                            <constraint firstItem="jUT-fs-gum" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" id="l4d-6d-Lkp"/>
+                            <constraint firstItem="jUT-fs-gum" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="112.5" id="oED-1T-2HP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="erx-vf-mnI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWT-7a-tRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662.31884057971024" y="83.705357142857139"/>
+        </scene>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
+                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arView>
+                    <navigationItem key="navigationItem" id="Ggg-gG-qkn"/>
+                    <connections>
+                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t99-VC-pQu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yNM-JM-S6b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="umA-Jz-drU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gra-Aw-I1R" kind="relationship" relationship="rootViewController" id="amg-QV-zZd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqR-wD-W2S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2372.463768115942" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Wing-on-Wo" width="308" height="201"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0FA3CC2803A42900710781 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FA3CB2803A42900710781 /* ControlView.swift */; };
 		3FD7F8EA2800BF0700B7820F /* HuluPorcelain.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7F8E92800BF0700B7820F /* HuluPorcelain.rcproject */; };
 		7F1CBA3C2800B9A7004BFE71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CBA3B2800B9A7004BFE71 /* AppDelegate.swift */; };
 		7F1CBA3E2800B9A7004BFE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CBA3D2800B9A7004BFE71 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0FA3CB2803A42900710781 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		3FD7F8E92800BF0700B7820F /* HuluPorcelain.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = HuluPorcelain.rcproject; sourceTree = SOURCE_ROOT; };
 		7F1CBA382800B9A7004BFE71 /* NYU-Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NYU-Landmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1CBA3B2800B9A7004BFE71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				7F1CBA3B2800B9A7004BFE71 /* AppDelegate.swift */,
 				7F1CBA3D2800B9A7004BFE71 /* ContentView.swift */,
+				3F0FA3CB2803A42900710781 /* ControlView.swift */,
 				3FD7F8E92800BF0700B7820F /* HuluPorcelain.rcproject */,
 				7F1CBA412800B9A8004BFE71 /* Assets.xcassets */,
 				7F1CBA432800B9A8004BFE71 /* Preview Content */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0FA3CC2803A42900710781 /* ControlView.swift in Sources */,
 				7F1CBA3E2800B9A7004BFE71 /* ContentView.swift in Sources */,
 				7F1CBA3C2800B9A7004BFE71 /* AppDelegate.swift in Sources */,
 				3FD7F8EA2800BF0700B7820F /* HuluPorcelain.rcproject in Sources */,
@@ -275,6 +279,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NYU-Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = 479QR3JML9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NYU-Landmarks/Preview Content\"";
+				DEVELOPMENT_TEAM = 479QR3JML9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

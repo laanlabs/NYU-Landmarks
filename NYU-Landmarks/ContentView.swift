@@ -10,9 +10,17 @@ import RealityKit
 
 struct ContentView : View {
     var body: some View {
-        return ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack(alignment: .bottom) {
+            
+            ARViewContainer()
+            
+            ControlView()
+            
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
+
 
 struct ARViewContainer: UIViewRepresentable {
     
@@ -22,7 +30,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         let anchor = try! HuluPorcelain.loadHulu()
         
-        // Add the box anchor to the scene
+        // Add to the scene
         arView.scene.anchors.append(anchor)
         
         return arView
@@ -33,10 +41,12 @@ struct ARViewContainer: UIViewRepresentable {
     
 }
 
+
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewInterfaceOrientation(.portrait)
     }
 }
 #endif

@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import RealityKit
 
 class MapViewController: UIViewController {
     
@@ -50,32 +51,31 @@ class MapViewController: UIViewController {
 }
 
 extension MapViewController: MKMapViewDelegate {
-    // 1
-    func mapView(
-        _ mapView: MKMapView,
-        viewFor annotation: MKAnnotation
-    ) -> MKAnnotationView? {
-        // 2
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard let annotation = annotation as? Landmark else {
             return nil
         }
-        // 3
         let identifier = "landmark"
         var view: MKMarkerAnnotationView
-        // 4
         if let dequeuedView = mapView.dequeueReusableAnnotationView(
             withIdentifier: identifier) as? MKMarkerAnnotationView {
             dequeuedView.annotation = annotation
             view = dequeuedView
+            view.image = UIImage(named: "pin")
         } else {
-            // 5
             view = MKMarkerAnnotationView(
                 annotation: annotation,
                 reuseIdentifier: identifier)
-            //view.image = UIImage(named: "WingOnWoIcon")
+            view.image = UIImage(named: "pin")
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
             view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            
+            let image = UIImage(named: "WingOnWoIcon")
+            let button = UIButton(type:.custom)
+            button.frame = CGRect(x:0,y:0,width:30,height:30)
+            button.setImage(image, for: .normal)
+            view.leftCalloutAccessoryView = button
         }
         return view
     }

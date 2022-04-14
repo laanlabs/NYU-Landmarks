@@ -54,7 +54,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cL-SU-seV">
                                 <rect key="frame" x="33" y="409" width="347" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Wing on Wo &amp; Co. (W.O.W.) is the oldest continuously operating store in Manhattan’s Chinatown boasting a five-generation long legacy in the heart of the neighborhood on Mott St. </string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -63,7 +62,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at a piece of porcelein from Wing on Wo &amp; Co and enjoy!" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-Yu-VLa">
                                 <rect key="frame" x="34" y="536" width="346" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -71,15 +69,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="WING ON WO &amp; CO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o3o-vq-Abf">
                                 <rect key="frame" x="33" y="107" width="347" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.04430924272768913" blue="0.032716463748842017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.8901960784313725" green="0.19215686274509802" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-pf-44i">
                                 <rect key="frame" x="33" y="514" width="321" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">How does the filter work?
 </string>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,7 +85,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find the store at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-3r-kvt">
                                 <rect key="frame" x="34" y="606" width="321" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -97,7 +92,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Learn more at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="icz-Mx-4RM">
                                 <rect key="frame" x="34" y="670" width="321" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -105,15 +99,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="26 Mott St, New York, NY 10013" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-Rv-foa">
                                 <rect key="frame" x="34" y="631" width="346" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-Ls-RER">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.co" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-Ls-RER">
                                 <rect key="frame" x="34" y="692" width="346" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -128,7 +120,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="START AR EXPERIENCE" cornerStyle="medium">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.80050664159999996" green="0.47112628685556479" blue="0.44249570880247246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.8666666666666667" green="0.44705882352941173" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
@@ -137,7 +129,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a9t-35-mph"/>
-                        <color key="backgroundColor" red="1" green="0.93634429575804301" blue="0.9370138312920695" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="1" green="0.96470588235294119" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="mDu-Pb-qge" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" constant="-6.5" id="J2w-Ny-Jrw"/>
                             <constraint firstItem="mDu-Pb-qge" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="337" id="KLB-cD-gLV"/>

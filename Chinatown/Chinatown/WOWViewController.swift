@@ -3,17 +3,16 @@
 //  Chinatown
 //
 //  Created by Cleo Xiao on 4/10/22.
+//  Updated by Jeongin Yoon on 4/14/22.
 //
 
 import UIKit
+import RealityKit
 
 class WOWViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "Wing on Wo"
-        
 
         // Do any additional setup after loading the view.
     }

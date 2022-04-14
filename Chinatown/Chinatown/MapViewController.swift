@@ -11,7 +11,6 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    
     @IBOutlet private var mapView: MKMapView!
     // Set initial location in Chinatown
     let initialLocation = CLLocation(latitude: 40.71521, longitude: -73.99869)
@@ -30,7 +29,6 @@ class MapViewController: UIViewController {
         )
         mapView.addAnnotation(WOW)
         
-        
     }
     
     func setStartingPosition(){
@@ -41,11 +39,6 @@ class MapViewController: UIViewController {
         
         mapView.setRegion(position, animated: true)
     }
-    
-    
-    
-
-        
     
 }
 

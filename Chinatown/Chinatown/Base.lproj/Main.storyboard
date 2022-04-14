@@ -61,7 +61,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at a piece of porcelein from Wing on Wo &amp; Co and enjoy!" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-Yu-VLa">
-                                <rect key="frame" x="34" y="536" width="346" height="62"/>
+                                <rect key="frame" x="34" y="528" width="346" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,18 +76,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-pf-44i">
-                                <rect key="frame" x="33" y="514" width="321" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">How does the filter work?
-</string>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find the store at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-3r-kvt">
-                                <rect key="frame" x="34" y="606" width="321" height="30"/>
+                                <rect key="frame" x="34" y="598" width="321" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,14 +93,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="26 Mott St, New York, NY 10013" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-Rv-foa">
-                                <rect key="frame" x="34" y="631" width="346" height="31"/>
+                                <rect key="frame" x="34" y="623" width="346" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-Ls-RER">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.co" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-Ls-RER">
                                 <rect key="frame" x="34" y="692" width="346" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -135,6 +125,16 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="3CK-k3-qI9"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-pf-44i">
+                                <rect key="frame" x="34" y="504" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">How does the filter work?
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a9t-35-mph"/>
                         <color key="backgroundColor" red="1" green="0.93634429575804301" blue="0.9370138312920695" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

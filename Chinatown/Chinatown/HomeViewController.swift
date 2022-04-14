@@ -13,6 +13,7 @@ import CoreLocation
 class HomeViewController: UIViewController, MKMapViewDelegate {
     
     let map = MKMapView()
+    //@IBOutlet private var map:MKMapView!
     
     let coordinate = CLLocationCoordinate2D(
         latitude: 40.71521,
@@ -27,8 +28,8 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
         map.setRegion(MKCoordinateRegion(
             center: coordinate,
             span: MKCoordinateSpan(
-                latitudeDelta: 0.1,
-                longitudeDelta: 0.1)
+                latitudeDelta: 0.003,
+                longitudeDelta: 0.003)
         ),
         animated: false)
         

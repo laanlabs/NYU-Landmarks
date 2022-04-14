@@ -8,34 +8,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="viW-aq-67h">
             <objects>
-                <viewController id="Gra-Aw-I1R" customClass="HomeViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Gra-Aw-I1R" customClass="MapViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Njc-Aw-35a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruw-EG-Lb4">
-                                <rect key="frame" x="129.5" y="545" width="155" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Wing on Wo">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="9Im-as-E3m" kind="show" id="JBc-QA-GjB"/>
-                                </connections>
-                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Pd-8c-qT3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="746"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mZ4-Sp-EMX"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ruw-EG-Lb4" firstAttribute="centerY" secondItem="Njc-Aw-35a" secondAttribute="centerY" constant="119" id="hv6-o2-nI7"/>
-                            <constraint firstItem="ruw-EG-Lb4" firstAttribute="centerX" secondItem="Njc-Aw-35a" secondAttribute="centerX" id="rfz-1q-lvH"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O5f-3k-lwk"/>
+                    <connections>
+                        <outlet property="mapView" destination="1Pd-8c-qT3" id="31O-x1-ABe"/>
+                        <segue destination="9Im-as-E3m" kind="show" identifier="Wing on Wo" id="1er-Yd-xQG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6C-vV-YDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +37,7 @@
         <!--View Controller-->
         <scene sceneID="4xh-8y-6Gs">
             <objects>
-                <viewController id="9Im-as-E3m" sceneMemberID="viewController">
+                <viewController id="9Im-as-E3m" customClass="WOWViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Oa-Om-VL5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,9 +131,6 @@
         <image name="Wing-on-Wo" width="308" height="201"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,31 +41,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jUT-fs-gum">
-                                <rect key="frame" x="47" y="451" width="320" height="256"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="129" id="DSj-nk-ANy"/>
-                                    <constraint firstAttribute="width" constant="320" id="DVC-Mc-Bx5"/>
-                                </constraints>
-                                <string key="text">Wing on Wo &amp; Co. (W.O.W.) is the oldest continuously operating store in Manhattan’s Chinatown boasting a five-generation long legacy in the heart of the neighborhood on Mott St. We sell primarily porcelain ware and cultural goods. The shop works to breathe new life into cultural craft by reinterpreting tradition through an Asian American lens.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wing-on-Wo" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-fV-gdO">
+                                <rect key="frame" x="34" y="174" width="346" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Zs-FB-58n">
+                                <rect key="frame" x="158" y="431" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cL-SU-seV">
+                                <rect key="frame" x="33" y="409" width="347" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Wing on Wo &amp; Co. (W.O.W.) is the oldest continuously operating store in Manhattan’s Chinatown boasting a five-generation long legacy in the heart of the neighborhood on Mott St. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wing-on-Wo" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-BV-nYE">
-                                <rect key="frame" x="46" y="147.5" width="308" height="201"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDu-Pb-qge">
-                                <rect key="frame" x="101" y="760" width="199" height="50"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at a piece of porcelein from Wing on Wo &amp; Co and enjoy!" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-Yu-VLa">
+                                <rect key="frame" x="34" y="536" width="346" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="WING ON WO &amp; CO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o3o-vq-Abf">
+                                <rect key="frame" x="33" y="107" width="347" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.04430924272768913" blue="0.032716463748842017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-pf-44i">
+                                <rect key="frame" x="33" y="514" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">How does the filter work?
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find the store at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-3r-kvt">
+                                <rect key="frame" x="34" y="606" width="321" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Learn more at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="icz-Mx-4RM">
+                                <rect key="frame" x="34" y="670" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="26 Mott St, New York, NY 10013" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-Rv-foa">
+                                <rect key="frame" x="34" y="631" width="346" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-Ls-RER">
+                                <rect key="frame" x="34" y="692" width="346" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9363442958" blue="0.93701383130000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDu-Pb-qge">
+                                <rect key="frame" x="60" y="761" width="292" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="09K-4A-XaA"/>
-                                    <constraint firstAttribute="width" constant="199" id="XL4-7x-VwU"/>
+                                    <constraint firstAttribute="width" constant="300" id="XL4-7x-VwU"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="AR Experience" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="plain" title="START AR EXPERIENCE" cornerStyle="medium">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.75077491569999999" green="0.53477097620000003" blue="0.80050664159999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.80050664159999996" green="0.47112628685556479" blue="0.44249570880247246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
@@ -75,14 +137,10 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a9t-35-mph"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.93634429575804301" blue="0.9370138312920695" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="b8m-BV-nYE" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" constant="-7" id="Duy-cq-7CC"/>
-                            <constraint firstItem="b8m-BV-nYE" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="-200" id="GCZ-cW-lFI"/>
                             <constraint firstItem="mDu-Pb-qge" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" constant="-6.5" id="J2w-Ny-Jrw"/>
                             <constraint firstItem="mDu-Pb-qge" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="337" id="KLB-cD-gLV"/>
-                            <constraint firstItem="jUT-fs-gum" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" id="l4d-6d-Lkp"/>
-                            <constraint firstItem="jUT-fs-gum" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="112.5" id="oED-1T-2HP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="erx-vf-mnI"/>
@@ -129,8 +187,5 @@
     </scenes>
     <resources>
         <image name="Wing-on-Wo" width="308" height="201"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

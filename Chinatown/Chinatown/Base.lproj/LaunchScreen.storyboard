@@ -4,9 +4,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tomorrow-Bold.ttf">
+            <string>Tomorrow-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,19 +20,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="f7Y-LQ-R1r">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="2MO-Bl-Q6F">
+                                <rect key="frame" x="36" y="7.5" width="342" height="690"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="8Jb-jD-BFO"/>
-                                    <constraint firstAttribute="height" constant="128" id="K4R-Hw-lkm"/>
+                                    <constraint firstAttribute="width" constant="342" id="5td-hn-Mgp"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AN AR EXPERIENCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5W-Sa-2lD">
+                                <rect key="frame" x="93" y="650" width="228" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.44705882349999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sz-AF-DIX">
+                                <rect key="frame" x="152.5" y="267" width="109.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" red="0.86666666670000003" green="0.44705882349999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHINA TOWN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rN3-rB-NqT">
+                                <rect key="frame" x="40" y="348" width="334" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="4RG-j3-ymo"/>
+                                    <constraint firstAttribute="width" constant="334" id="Tdf-sv-5Xl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tomorrow-Bold" family="Tomorrow" pointSize="90"/>
+                                <color key="textColor" red="0.8901960784313725" green="0.19215686274509802" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.75686274509803919" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f7Y-LQ-R1r" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QYm-2D-vkR"/>
-                            <constraint firstItem="f7Y-LQ-R1r" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UeD-Ii-Eo5"/>
+                            <constraint firstItem="2MO-Bl-Q6F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-95.5" id="0Zh-h4-ftj"/>
+                            <constraint firstItem="5sz-AF-DIX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-166.5" id="28J-OG-Z7U"/>
+                            <constraint firstItem="2MO-Bl-Q6F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-95.5" id="5eo-Vv-oTA"/>
+                            <constraint firstItem="i5W-Sa-2lD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="216.5" id="6NJ-2J-QAr"/>
+                            <constraint firstItem="rN3-rB-NqT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="11" id="FbM-kE-Vrd"/>
+                            <constraint firstItem="2MO-Bl-Q6F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IWa-8f-I3K"/>
+                            <constraint firstItem="rN3-rB-NqT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zfm-xn-KaS"/>
+                            <constraint firstItem="2MO-Bl-Q6F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="puI-LU-dc9"/>
+                            <constraint firstItem="5sz-AF-DIX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tWb-CN-HnD"/>
+                            <constraint firstItem="i5W-Sa-2lD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zsG-Lm-7mj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,9 +71,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="228" height="306"/>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Launch" width="513" height="690"/>
     </resources>
 </document>

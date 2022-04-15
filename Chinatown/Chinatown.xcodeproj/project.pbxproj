@@ -17,6 +17,9 @@
 		655443912803C9470066EAF5 /* WOWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655443902803C9470066EAF5 /* WOWViewController.swift */; };
 		65A9FD2528088955004A75FA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9FD2428088955004A75FA /* MapViewController.swift */; };
 		65A9FD2A2808A13E004A75FA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9FD292808A13E004A75FA /* Landmark.swift */; };
+		65A9FD4E280919F4004A75FA /* BallroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A9FD4D280919F4004A75FA /* BallroomViewController.swift */; };
+		65A9FD5328092122004A75FA /* Tomorrow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65A9FD5228092122004A75FA /* Tomorrow-Bold.ttf */; };
+		65F90E12280937B500B71CEF /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F90E11280937B500B71CEF /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		65A9FD2428088955004A75FA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		65A9FD2828088ED8004A75FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65A9FD292808A13E004A75FA /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		65A9FD4D280919F4004A75FA /* BallroomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallroomViewController.swift; sourceTree = "<group>"; };
+		65A9FD5228092122004A75FA /* Tomorrow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tomorrow-Bold.ttf"; sourceTree = "<group>"; };
+		65F90E11280937B500B71CEF /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +70,30 @@
 		6554437A2803C7A00066EAF5 /* Chinatown */ = {
 			isa = PBXGroup;
 			children = (
+				65A9FD5128092100004A75FA /* Font */,
 				65A9FD292808A13E004A75FA /* Landmark.swift */,
 				65A9FD2828088ED8004A75FA /* Info.plist */,
 				6554437B2803C7A00066EAF5 /* AppDelegate.swift */,
 				6554437D2803C7A00066EAF5 /* ViewController.swift */,
 				6554437F2803C7A00066EAF5 /* Experience.rcproject */,
 				655443812803C7A00066EAF5 /* Main.storyboard */,
+				65A9FD4D280919F4004A75FA /* BallroomViewController.swift */,
 				655443902803C9470066EAF5 /* WOWViewController.swift */,
+				65F90E11280937B500B71CEF /* NavViewController.swift */,
 				6554438E2803C9350066EAF5 /* HomeViewController.swift */,
 				65A9FD2428088955004A75FA /* MapViewController.swift */,
 				655443842803C7A10066EAF5 /* Assets.xcassets */,
 				655443862803C7A10066EAF5 /* LaunchScreen.storyboard */,
 			);
 			path = Chinatown;
+			sourceTree = "<group>";
+		};
+		65A9FD5128092100004A75FA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				65A9FD5228092122004A75FA /* Tomorrow-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A9FD5328092122004A75FA /* Tomorrow-Bold.ttf in Resources */,
 				655443882803C7A10066EAF5 /* LaunchScreen.storyboard in Resources */,
 				655443852803C7A10066EAF5 /* Assets.xcassets in Resources */,
 				655443832803C7A00066EAF5 /* Main.storyboard in Resources */,
@@ -154,8 +172,10 @@
 				6554437E2803C7A00066EAF5 /* ViewController.swift in Sources */,
 				65A9FD2528088955004A75FA /* MapViewController.swift in Sources */,
 				6554437C2803C7A00066EAF5 /* AppDelegate.swift in Sources */,
+				65F90E12280937B500B71CEF /* NavViewController.swift in Sources */,
 				655443802803C7A00066EAF5 /* Experience.rcproject in Sources */,
 				655443912803C9470066EAF5 /* WOWViewController.swift in Sources */,
+				65A9FD4E280919F4004A75FA /* BallroomViewController.swift in Sources */,
 				6554438F2803C9350066EAF5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

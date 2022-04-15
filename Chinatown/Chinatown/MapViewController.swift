@@ -16,7 +16,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     
     // Set initial location in Chinatown
-    let initialLocation = CLLocation(latitude: 40.71521, longitude: -73.99869)
+    let initialLocation = CLLocation(latitude: 40.71420675499155,  longitude: -73.99722752890992)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +25,25 @@ class MapViewController: UIViewController {
 
         
         mapView.delegate = self
-        //show landmark on map
-        let WOW = Landmark( title: "Wing on Wo", subtitle: "Porcelain", discipline: "Porcelain Store", coordinate: CLLocationCoordinate2D(
+//        //show landmark on map
+        let WOW = Landmark( title: "Wing on Wo", subtitle: "Porcelain Store", icon: "WingOnWoIcon", coordinate: CLLocationCoordinate2D(
             latitude: 40.71521,
             longitude: -73.99869
         )
         )
         mapView.addAnnotation(WOW)
         
-        if let icon = UIImage(named: "pin") {
-            button.setImage(icon, for: .normal)
-        }
+        let ballroom = Landmark(title: "Imperial Ballroom", subtitle: "Dance Studio", icon: "BallroomIcon", coordinate: CLLocationCoordinate2D(
+            latitude: 40.7142311514786,
+            longitude: -73.9960580857825
+        ))
+       mapView.addAnnotation(ballroom)
+//
+
+        button.setImage(UIImage(named: "pin2"), for: .normal)
         button.configuration?.imagePadding = 10
         button.layer.cornerRadius = 24.0
         button.setTitle("Tap a pin to start exploring!", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-
-
         
     }
     
@@ -61,9 +63,9 @@ class MapViewController: UIViewController {
 
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        guard let annotation = annotation as? Landmark else {
-//            return nil
-//        }
+        guard let annotation = annotation as? Landmark else {
+            return nil
+        }
 //        let identifier = "landmark"
 //        var view: MKMarkerAnnotationView
 //        if let dequeuedView = mapView.dequeueReusableAnnotationView(
@@ -86,9 +88,9 @@ extension MapViewController: MKMapViewDelegate {
 //            button.setImage(image, for: .normal)
 //            view.leftCalloutAccessoryView = button
 //        }
-        guard !(annotation is MKUserLocation) else {
-            return nil
-        }
+//        guard !(annotation is MKUserLocation) else {
+//            return nil
+//        }
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
         
         if annotationView == nil {
@@ -100,9 +102,14 @@ extension MapViewController: MKMapViewDelegate {
         }
         
         annotationView?.image = UIImage(named: "pin")
-        annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        let rightbutton = UIButton(type: .custom)
+        rightbutton.frame = CGRect(x:0,y:0,width:30,height:30)
+        rightbutton.setImage(UIImage(named: "next"), for: .normal)
+        annotationView?.rightCalloutAccessoryView = rightbutton
         
-        let image = UIImage(named: "WingOnWoIcon")
+        let name = annotation.icon!
+        print(name)
+        let image = UIImage(named: name)
         let button = UIButton(type:.custom)
         button.frame = CGRect(x:0,y:0,width:30,height:30)
         button.setImage(image, for: .normal)
@@ -119,9 +126,11 @@ extension MapViewController: MKMapViewDelegate {
         guard let landmark = view.annotation as? Landmark else{
             return
         }
+        print("click")
         guard let name = landmark.title else{
             return
         }
+        print(name)
         self.performSegue(withIdentifier: name, sender: control)
     }
 }

@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tomorrow-Bold.ttf">
+            <string>Tomorrow-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Map View Controller-->
         <scene sceneID="viW-aq-67h">
@@ -30,7 +35,9 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tap a pin to start exploring!">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mZ4-Sp-EMX"/>
@@ -44,114 +51,13 @@
                     <connections>
                         <outlet property="button" destination="ZIK-vy-sna" id="dl1-59-uz1"/>
                         <outlet property="mapView" destination="1Pd-8c-qT3" id="31O-x1-ABe"/>
-                        <segue destination="9Im-as-E3m" kind="show" identifier="Wing on Wo" id="1er-Yd-xQG"/>
+                        <segue destination="0hu-un-n7A" kind="show" identifier="Imperial Ballroom" id="9uo-ql-oaJ"/>
+                        <segue destination="AZY-bu-iE0" kind="show" identifier="Wing on Wo" id="kdn-EW-GGb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6C-vV-YDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1462.3188405797102" y="83.705357142857139"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4xh-8y-6Gs">
-            <objects>
-                <viewController id="9Im-as-E3m" customClass="WOWViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2Oa-Om-VL5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wing-on-Wo" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-fV-gdO">
-                                <rect key="frame" x="34" y="174" width="346" height="221"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cL-SU-seV">
-                                <rect key="frame" x="33" y="409" width="347" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Wing on Wo &amp; Co. (W.O.W.) is the oldest continuously operating store in Manhattan’s Chinatown boasting a five-generation long legacy in the heart of the neighborhood on Mott St. </string>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at a piece of porcelein from Wing on Wo &amp; Co and enjoy!" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-Yu-VLa">
-                                <rect key="frame" x="34" y="536" width="346" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="WING ON WO &amp; CO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o3o-vq-Abf">
-                                <rect key="frame" x="33" y="107" width="347" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.8901960784313725" green="0.19215686274509802" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-pf-44i">
-                                <rect key="frame" x="33" y="514" width="321" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">How does the filter work?
-</string>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find the store at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-3r-kvt">
-                                <rect key="frame" x="34" y="606" width="321" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Learn more at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="icz-Mx-4RM">
-                                <rect key="frame" x="34" y="670" width="321" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="26 Mott St, New York, NY 10013" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBR-Rv-foa">
-                                <rect key="frame" x="34" y="631" width="346" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.co" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h8c-Ls-RER">
-                                <rect key="frame" x="34" y="692" width="346" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDu-Pb-qge">
-                                <rect key="frame" x="60" y="761" width="292" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="09K-4A-XaA"/>
-                                    <constraint firstAttribute="width" constant="300" id="XL4-7x-VwU"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START AR EXPERIENCE" cornerStyle="medium">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.8666666666666667" green="0.44705882352941173" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="3CK-k3-qI9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="a9t-35-mph"/>
-                        <color key="backgroundColor" red="1" green="0.96470588235294119" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="mDu-Pb-qge" firstAttribute="centerX" secondItem="2Oa-Om-VL5" secondAttribute="centerX" constant="-6.5" id="J2w-Ny-Jrw"/>
-                            <constraint firstItem="mDu-Pb-qge" firstAttribute="centerY" secondItem="2Oa-Om-VL5" secondAttribute="centerY" constant="337" id="KLB-cD-gLV"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="erx-vf-mnI"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pWT-7a-tRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-662.31884057971024" y="83.705357142857139"/>
         </scene>
         <!--ARView-->
         <scene sceneID="tne-QT-ifu">
@@ -170,14 +76,15 @@
             </objects>
             <point key="canvasLocation" x="241" y="84"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="t99-VC-pQu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yNM-JM-S6b" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yNM-JM-S6b" customClass="NavViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="umA-Jz-drU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="back" backIndicatorImage="back" backIndicatorTransitionMaskImage="back" id="umA-Jz-drU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.96470588239999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -188,9 +95,216 @@
             </objects>
             <point key="canvasLocation" x="-2372.463768115942" y="83.705357142857139"/>
         </scene>
+        <!--Ballroom View Controller-->
+        <scene sceneID="FAz-Xf-0kg">
+            <objects>
+                <viewController id="0hu-un-n7A" customClass="BallroomViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fs2-gn-aSO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ballroom" translatesAutoresizingMaskIntoConstraints="NO" id="UF1-h1-Syb">
+                                <rect key="frame" x="34" y="174" width="346" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ay6-dO-pOt">
+                                <rect key="frame" x="33" y="409" width="347" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Imperial Ballroom opened its doors to the dancers of New York in 1995. Ming and Irene are the proud owners of Imperial Ballroom. With years of professional dance and competition under their belts, the couple decided to open the studio to share their passion for dance with the world. They invite you to come see them sometime soon!</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="IMPERIAL BALLROOM" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-UK-7WR">
+                                <rect key="frame" x="33" y="107" width="347" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.89019607840000003" green="0.19215686269999999" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Tomorrow-Bold" family="Tomorrow" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-hu-2zA">
+                                <rect key="frame" x="60" y="761" width="292" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kDK-a5-fqf"/>
+                                    <constraint firstAttribute="width" constant="300" id="uvY-4y-myw"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START AR EXPERIENCE" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.86666666670000003" green="0.44705882349999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at the Confucius statue (or a picture of it) to activate filter." translatesAutoresizingMaskIntoConstraints="NO" id="mJP-TZ-nxO">
+                                <rect key="frame" x="34" y="560" width="346" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zDi-9W-7lh">
+                                <rect key="frame" x="33" y="538" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">How does the filter work?
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find the store at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Axh-i1-Huf">
+                                <rect key="frame" x="34" y="609" width="321" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Learn more at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hge-At-a2s">
+                                <rect key="frame" x="34" y="673" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2 Division St, New York, NY 10002" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aJt-92-hVg">
+                                <rect key="frame" x="34" y="634" width="346" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="imperialballroomnyc.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dnt-Rk-7qh">
+                                <rect key="frame" x="34" y="695" width="346" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jsv-bZ-LvV"/>
+                        <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="w8G-hu-2zA" firstAttribute="centerX" secondItem="Fs2-gn-aSO" secondAttribute="centerX" constant="-6.5" id="DqI-RQ-RrQ"/>
+                            <constraint firstItem="w8G-hu-2zA" firstAttribute="centerY" secondItem="Fs2-gn-aSO" secondAttribute="centerY" constant="337" id="cfy-Uh-BzU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mnM-Yx-Ovi">
+                        <barButtonItem key="backBarButtonItem" title=" " id="4xM-th-1XH"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XON-N4-Cn8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1462" y="909"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qNQ-Tv-Qqj">
+            <objects>
+                <viewController id="AZY-bu-iE0" customClass="WOWViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vq1-qo-icc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wing-on-Wo" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-BU-xZC">
+                                <rect key="frame" x="34" y="174" width="346" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0K-cw-3T3">
+                                <rect key="frame" x="33" y="409" width="347" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Wing on Wo &amp; Co. (W.O.W.) is the oldest continuously operating store in Manhattan’s Chinatown boasting a five-generation long legacy in the heart of the neighborhood on Mott St. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="WING ON WO &amp; CO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UfD-rD-h3x">
+                                <rect key="frame" x="33" y="107" width="347" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.89019607840000003" green="0.19215686269999999" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Tomorrow-Bold" family="Tomorrow" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vz-Tb-qdn">
+                                <rect key="frame" x="60" y="761" width="292" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="fEe-gu-f2Q"/>
+                                    <constraint firstAttribute="height" constant="50" id="qxH-Ig-xJJ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="START AR EXPERIENCE" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.86666666670000003" green="0.44705882349999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hxq-Va-F3S"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at a piece of porcelein from Wing on Wo &amp; Co and enjoy!" translatesAutoresizingMaskIntoConstraints="NO" id="D62-Oo-Vt1">
+                                <rect key="frame" x="34" y="512" width="346" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WON-KK-raH">
+                                <rect key="frame" x="33" y="490" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">How does the filter work?
+</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Find the store at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hJU-fO-nsR">
+                                <rect key="frame" x="34" y="568" width="321" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Learn more at:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F1j-AW-ow9">
+                                <rect key="frame" x="34" y="632" width="321" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="26 Mott St, New York, NY 10013" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jWL-yv-eMQ">
+                                <rect key="frame" x="34" y="593" width="346" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="wingonwoand.co" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m7n-nl-ACr">
+                                <rect key="frame" x="34" y="654" width="346" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jw8-9g-nxL"/>
+                        <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4Vz-Tb-qdn" firstAttribute="centerX" secondItem="vq1-qo-icc" secondAttribute="centerX" constant="-6.5" id="XDj-Bf-88d"/>
+                            <constraint firstItem="4Vz-Tb-qdn" firstAttribute="centerY" secondItem="vq1-qo-icc" secondAttribute="centerY" constant="337" id="bDF-Ue-0CL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NWz-qL-ZDU">
+                        <barButtonItem key="backBarButtonItem" title=" \" id="kl6-TT-dsi"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZv-DO-suK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-633" y="909"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Ballroom" width="341" height="213"/>
         <image name="Wing-on-Wo" width="308" height="201"/>
+        <image name="back" width="48" height="48"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

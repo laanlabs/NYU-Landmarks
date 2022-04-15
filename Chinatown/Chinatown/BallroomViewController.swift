@@ -1,19 +1,16 @@
 //
-//  WOWViewController.swift
+//  BallroomViewController.swift
 //  Chinatown
 //
-//  Created by Cleo Xiao on 4/10/22.
-//  Updated by Jeongin Yoon on 4/14/22.
+//  Created by Cleo Xiao on 4/14/22.
 //
 
 import UIKit
-import RealityKit
 
-class WOWViewController: UIViewController {
+class BallroomViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }

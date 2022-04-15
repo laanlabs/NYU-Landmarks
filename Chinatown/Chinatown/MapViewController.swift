@@ -23,19 +23,19 @@ class MapViewController: UIViewController {
         
         setStartingPosition()
 
-        
+        // Jeongin relocated the pin (latitude and longitute values) on the map.
         mapView.delegate = self
 //        //show landmark on map
         let WOW = Landmark( title: "Wing on Wo", subtitle: "Porcelain Store", icon: "WingOnWoIcon", coordinate: CLLocationCoordinate2D(
-            latitude: 40.71521,
-            longitude: -73.99869
+            latitude: 40.71456,
+            longitude: -73.99871
         )
         )
         mapView.addAnnotation(WOW)
         
         let ballroom = Landmark(title: "Imperial Ballroom", subtitle: "Dance Studio", icon: "BallroomIcon", coordinate: CLLocationCoordinate2D(
-            latitude: 40.7142311514786,
-            longitude: -73.9960580857825
+            latitude: 40.71407,
+            longitude: -73.99610
         ))
        mapView.addAnnotation(ballroom)
 //

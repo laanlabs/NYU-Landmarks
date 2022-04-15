@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +20,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIK-vy-sna">
+                                <rect key="frame" x="36" y="88.5" width="342" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="342" id="02f-a9-wdR"/>
+                                    <constraint firstAttribute="height" constant="60" id="pfT-aS-SB4"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mZ4-Sp-EMX"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZIK-vy-sna" firstAttribute="centerY" secondItem="Njc-Aw-35a" secondAttribute="centerY" constant="-323" id="GxC-V7-uqP"/>
+                            <constraint firstItem="ZIK-vy-sna" firstAttribute="centerX" secondItem="Njc-Aw-35a" secondAttribute="centerX" id="SPf-8G-n94"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O5f-3k-lwk"/>
                     <connections>
+                        <outlet property="button" destination="ZIK-vy-sna" id="dl1-59-uz1"/>
                         <outlet property="mapView" destination="1Pd-8c-qT3" id="31O-x1-ABe"/>
                         <segue destination="9Im-as-E3m" kind="show" identifier="Wing on Wo" id="1er-Yd-xQG"/>
                     </connections>
@@ -45,12 +63,6 @@
                                 <rect key="frame" x="34" y="174" width="346" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Zs-FB-58n">
-                                <rect key="frame" x="158" y="431" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cL-SU-seV">
                                 <rect key="frame" x="33" y="409" width="347" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -179,5 +191,8 @@
     </scenes>
     <resources>
         <image name="Wing-on-Wo" width="308" height="201"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

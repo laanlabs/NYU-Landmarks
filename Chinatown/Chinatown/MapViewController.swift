@@ -13,6 +13,8 @@ import RealityKit
 class MapViewController: UIViewController {
     
     @IBOutlet private var mapView: MKMapView!
+    @IBOutlet weak var button: UIButton!
+    
     // Set initial location in Chinatown
     let initialLocation = CLLocation(latitude: 40.71521, longitude: -73.99869)
     
@@ -20,6 +22,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         setStartingPosition()
+
         
         mapView.delegate = self
         //show landmark on map
@@ -30,7 +33,18 @@ class MapViewController: UIViewController {
         )
         mapView.addAnnotation(WOW)
         
+        if let icon = UIImage(named: "pin") {
+            button.setImage(icon, for: .normal)
+        }
+        button.configuration?.imagePadding = 10
+        button.layer.cornerRadius = 24.0
+        button.setTitle("Tap a pin to start exploring!", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+
+
+        
     }
+    
     
     func setStartingPosition(){
         
@@ -43,34 +57,62 @@ class MapViewController: UIViewController {
     
 }
 
+
+
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let annotation = annotation as? Landmark else {
+//        guard let annotation = annotation as? Landmark else {
+//            return nil
+//        }
+//        let identifier = "landmark"
+//        var view: MKMarkerAnnotationView
+//        if let dequeuedView = mapView.dequeueReusableAnnotationView(
+//            withIdentifier: identifier) as? MKMarkerAnnotationView {
+//            dequeuedView.annotation = annotation
+//            view = dequeuedView
+//            view.image = UIImage(named: "pin")
+//        } else {
+//            view = MKMarkerAnnotationView(
+//                annotation: annotation,
+//                reuseIdentifier: identifier)
+//            view.image = UIImage(named: "pin")
+//            view.canShowCallout = true
+//            view.calloutOffset = CGPoint(x: -5, y: 5)
+//            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//
+//            let image = UIImage(named: "WingOnWoIcon")
+//            let button = UIButton(type:.custom)
+//            button.frame = CGRect(x:0,y:0,width:30,height:30)
+//            button.setImage(image, for: .normal)
+//            view.leftCalloutAccessoryView = button
+//        }
+        guard !(annotation is MKUserLocation) else {
             return nil
         }
-        let identifier = "landmark"
-        var view: MKMarkerAnnotationView
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(
-            withIdentifier: identifier) as? MKMarkerAnnotationView {
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-            view.image = UIImage(named: "pin")
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "custom")
+        
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation,
+                                              reuseIdentifier: "custom")
+            annotationView?.canShowCallout = true
         } else {
-            view = MKMarkerAnnotationView(
-                annotation: annotation,
-                reuseIdentifier: identifier)
-            view.image = UIImage(named: "pin")
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-            
-            let image = UIImage(named: "WingOnWoIcon")
-            let button = UIButton(type:.custom)
-            button.frame = CGRect(x:0,y:0,width:30,height:30)
-            button.setImage(image, for: .normal)
-            view.leftCalloutAccessoryView = button
+            annotationView?.annotation = annotation
         }
-        return view
+        
+        annotationView?.image = UIImage(named: "pin")
+        annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        
+        let image = UIImage(named: "WingOnWoIcon")
+        let button = UIButton(type:.custom)
+        button.frame = CGRect(x:0,y:0,width:30,height:30)
+        button.setImage(image, for: .normal)
+        annotationView?.leftCalloutAccessoryView = button
+        
+        
+        return annotationView
+        
+        
+        //return view
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {

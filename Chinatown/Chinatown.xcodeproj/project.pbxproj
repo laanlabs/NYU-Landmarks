@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650C45C22812DFB50031DBBE /* Porcelain.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 650C45C12812DFB50031DBBE /* Porcelain.rcproject */; };
 		6554437C2803C7A00066EAF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6554437B2803C7A00066EAF5 /* AppDelegate.swift */; };
 		6554437E2803C7A00066EAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6554437D2803C7A00066EAF5 /* ViewController.swift */; };
 		655443802803C7A00066EAF5 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 6554437F2803C7A00066EAF5 /* Experience.rcproject */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650C45C12812DFB50031DBBE /* Porcelain.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Porcelain.rcproject; sourceTree = "<group>"; };
 		655443782803C7A00066EAF5 /* Chinatown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chinatown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6554437B2803C7A00066EAF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6554437D2803C7A00066EAF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				6554437B2803C7A00066EAF5 /* AppDelegate.swift */,
 				6554437D2803C7A00066EAF5 /* ViewController.swift */,
 				6554437F2803C7A00066EAF5 /* Experience.rcproject */,
+				650C45C12812DFB50031DBBE /* Porcelain.rcproject */,
 				655443812803C7A00066EAF5 /* Main.storyboard */,
 				65A9FD4D280919F4004A75FA /* BallroomViewController.swift */,
 				655443902803C9470066EAF5 /* WOWViewController.swift */,
@@ -176,6 +179,7 @@
 				655443802803C7A00066EAF5 /* Experience.rcproject in Sources */,
 				655443912803C9470066EAF5 /* WOWViewController.swift in Sources */,
 				65A9FD4E280919F4004A75FA /* BallroomViewController.swift in Sources */,
+				650C45C22812DFB50031DBBE /* Porcelain.rcproject in Sources */,
 				6554438F2803C9350066EAF5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +328,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 479QR3JML9;
+				DEVELOPMENT_TEAM = 92469D8U4Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Chinatown/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -359,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 479QR3JML9;
+				DEVELOPMENT_TEAM = 92469D8U4Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Chinatown/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";

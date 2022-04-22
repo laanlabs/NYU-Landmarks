@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
+        let boxAnchor = try! Porcelain.loadScene()
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)

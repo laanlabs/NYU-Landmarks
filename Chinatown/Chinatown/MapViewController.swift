@@ -132,6 +132,16 @@ extension MapViewController: MKMapViewDelegate {
         }
         print(name)
         self.performSegue(withIdentifier: name, sender: control)
+//        let storyboard = UIStoryboard(name: "Main" , bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "ImperialBallroom")
+//        self.present(vc, animated: true)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let controller = storyboard.instantiateViewController(withIdentifier: "ImperialBallroom")
+//            self.present(controller, animated: true, completion: nil)
+//        }
+
+    
     }
 }
 /*

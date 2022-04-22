@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,9 +47,7 @@
                             <constraint firstItem="ZIK-vy-sna" firstAttribute="centerX" secondItem="Njc-Aw-35a" secondAttribute="centerX" id="SPf-8G-n94"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="O5f-3k-lwk">
-                        <barButtonItem key="backBarButtonItem" title=" " id="bTU-Qb-1GS"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="O5f-3k-lwk"/>
                     <connections>
                         <outlet property="button" destination="ZIK-vy-sna" id="dl1-59-uz1"/>
                         <outlet property="mapView" destination="1Pd-8c-qT3" id="31O-x1-ABe"/>
@@ -84,14 +81,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yNM-JM-S6b" customClass="NavViewController" customModule="Chinatown" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="umA-Jz-drU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="back" backIndicatorImage="back" backIndicatorTransitionMaskImage="back" id="umA-Jz-drU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.86666666670000003" green="0.44705882349999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="barTintColor" red="1" green="0.96470588239999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <imageReference key="shadowImage" image="back" renderingMode="template"/>
-                        <imageReference key="backIndicatorImage" image="back" renderingMode="template"/>
-                        <imageReference key="backIndicatorTransitionMaskImage" image="back" renderingMode="original"/>
+                        <color key="tintColor" red="1" green="0.96470588239999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -142,9 +135,6 @@
                                         <color key="backgroundColor" red="0.86666666670000003" green="0.44705882349999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonTap:" destination="0hu-un-n7A" eventType="touchUpInside" id="Ssh-gt-lvN"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Press the start button. Point your camera at the Confucius statue (or a picture of it) to activate filter." translatesAutoresizingMaskIntoConstraints="NO" id="mJP-TZ-nxO">
                                 <rect key="frame" x="34" y="560" width="346" height="62"/>
@@ -199,12 +189,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mnM-Yx-Ovi">
-                        <barButtonItem key="backBarButtonItem" tag="1" title="Test" image="back" id="4xM-th-1XH"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="4xM-th-1XH"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="button" destination="w8G-hu-2zA" id="wpe-Mw-3HX"/>
-                        <outlet property="myButton" destination="w8G-hu-2zA" id="zX7-ku-Bet"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XON-N4-Cn8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -307,7 +293,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NWz-qL-ZDU">
-                        <barButtonItem key="backBarButtonItem" title=" " id="MMs-XR-353"/>
+                        <barButtonItem key="backBarButtonItem" title=" \" id="kl6-TT-dsi"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KZv-DO-suK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

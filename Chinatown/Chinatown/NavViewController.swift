@@ -15,7 +15,7 @@ override func viewDidLoad() {
     // Do any additional setup after loading the view.
 
     //self.navigationBar.setBackgroundImage(UIImage(named: "back"), for: .default)
-    //self.navigationBar.shadowImage = UIImage()
+    self.navigationBar.shadowImage = UIImage()
     self.navigationBar.isTranslucent = true
     self.navigationBar.backIndicatorImage = UIImage(named: "back")
 

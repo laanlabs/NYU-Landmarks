@@ -9,6 +9,9 @@ import UIKit
 
 class BallroomViewController: UIViewController {
 
+    @IBAction func link(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string:"https://www.instagram.com/ar/558986898787916/")! as URL, options: [:], completionHandler: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

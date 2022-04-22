@@ -16,8 +16,8 @@ class HomeViewController: UIViewController, MKMapViewDelegate {
     //@IBOutlet private var map:MKMapView!
     
     let coordinate = CLLocationCoordinate2D(
-        latitude: 40.71456,
-        longitude: -73.99871
+        latitude: 40.71521,
+        longitude: -73.99869
     )
 
     override func viewDidLoad() {

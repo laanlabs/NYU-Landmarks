@@ -1,3 +1,117 @@
 [
-
+  {
+    "libraryIdentifier" : "d5abdc809a60c10fca60165f20dff18b",
+    "format" : "model",
+    "displayName" : "mount.usdz"
+  },
+  {
+    "libraryIdentifier" : "f5c0a1c7127db1028ba6f322a61e9f4f",
+    "format" : "image",
+    "displayName" : "Hulu-02.png"
+  },
+  {
+    "libraryIdentifier" : "ef4223fb440368c81c2d426ba5229d20",
+    "format" : "model",
+    "displayName" : "lantern.usdz"
+  },
+  {
+    "libraryIdentifier" : "ab3a41ab82d90d55c0416a4c36d11211",
+    "format" : "model",
+    "displayName" : "poemeng.usdz"
+  },
+  {
+    "libraryIdentifier" : "214dca638090d7a2633e31bc6c651d16",
+    "format" : "model",
+    "displayName" : "poemmadarin.usdz"
+  },
+  {
+    "libraryIdentifier" : "5101ab02b9b38f8af760001f3dfe6b19",
+    "format" : "model",
+    "displayName" : "cloud.usdz"
+  },
+  {
+    "libraryIdentifier" : "00bf053b2797fd8a971693b6b063311b",
+    "format" : "model",
+    "displayName" : "coloryun.usdz"
+  },
+  {
+    "libraryIdentifier" : "1e9932a71ad89c2749179ab2408d1cd2",
+    "format" : "model",
+    "displayName" : "umbrella.usdz"
+  },
+  {
+    "libraryIdentifier" : "16d6a1210bdf6ed645d459eadb63156a",
+    "format" : "model",
+    "displayName" : "nostick.usdz"
+  },
+  {
+    "libraryIdentifier" : "8ac7e50d3a5203e91f82727ca1ff7c90",
+    "format" : "model",
+    "displayName" : "bluenostick .usdz"
+  },
+  {
+    "libraryIdentifier" : "e80415b89ed2b5788f6c7bede1a0cb83",
+    "format" : "model",
+    "displayName" : "orangenostick.usdz"
+  },
+  {
+    "libraryIdentifier" : "9f58aa0525d32e5c2c77ab8ddef6099b",
+    "format" : "model",
+    "displayName" : "transparentyellownostick.usdz"
+  },
+  {
+    "libraryIdentifier" : "b3917957fa8607a7aaec8b78fab6eaad",
+    "format" : "model",
+    "displayName" : "wo.usdz"
+  },
+  {
+    "libraryIdentifier" : "a7823b20f68e4e3c77cde2f33e9a4f6a",
+    "format" : "model",
+    "displayName" : "duo.usdz"
+  },
+  {
+    "libraryIdentifier" : "8a4178f8c390a31fccd47b9256fd71d3",
+    "format" : "model",
+    "displayName" : "jian.usdz"
+  },
+  {
+    "libraryIdentifier" : "d5f92a4fb8dfdf983972bd748cd40d86",
+    "format" : "model",
+    "displayName" : "liao.usdz"
+  },
+  {
+    "libraryIdentifier" : "34ee073f0acbafea39abe19a50add731",
+    "format" : "model",
+    "displayName" : "mei.usdz"
+  },
+  {
+    "libraryIdentifier" : "5a548b398616bf48ba1d08b5fc736984",
+    "format" : "model",
+    "displayName" : "qing.usdz"
+  },
+  {
+    "libraryIdentifier" : "4315b5db0c3b2c99c37d25f03b2174ab",
+    "format" : "model",
+    "displayName" : "ru.usdz"
+  },
+  {
+    "libraryIdentifier" : "dceecadc17d64084d99f16d420281580",
+    "format" : "model",
+    "displayName" : "shan.usdz"
+  },
+  {
+    "libraryIdentifier" : "4bba5ff6288d2a0846064957ff43667e",
+    "format" : "model",
+    "displayName" : "shi.usdz"
+  },
+  {
+    "libraryIdentifier" : "bc05f4a7bd652b0853e2dbf356a9249d",
+    "format" : "model",
+    "displayName" : "wu.usdz"
+  },
+  {
+    "libraryIdentifier" : "d2ac44db676bd31dbb876adc1343e884",
+    "format" : "model",
+    "displayName" : "ying.usdz"
+  }
 ]

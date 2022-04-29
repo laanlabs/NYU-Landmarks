@@ -6,9 +6,8 @@
           "__content" : [
             {
               "arAnchorSpecification" : {
-                "name" : "image",
-                "physicalWidth" : 0.2158999890089035,
-                "url" : "image:f5c0a1c7127db1028ba6f322a61e9f4f\/Hulu-02.png"
+                "alignment" : "horizontal",
+                "name" : "surface"
               },
               "behaviors" : [
 

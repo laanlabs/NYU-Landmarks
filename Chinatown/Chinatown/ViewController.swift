@@ -20,5 +20,18 @@ class ViewController: UIViewController {
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(boxAnchor)
+        
+        let audioFilePath = "/relaxing-ambient-music.wav"
+        let entity = Entity()
+        
+        do {
+            let resource = try AudioFileResource.load(named: audioFilePath, in: nil, inputMode: .spatial, loadingStrategy: .preload, shouldLoop: true)
+            
+            let audioController = entity.playAudio(resource)
+            audioController.play()
+            
+        } catch {
+            print("Error loading audio file")
+        }
     }
 }

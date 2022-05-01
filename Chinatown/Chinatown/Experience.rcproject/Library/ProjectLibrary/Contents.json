@@ -113,5 +113,10 @@
     "libraryIdentifier" : "d2ac44db676bd31dbb876adc1343e884",
     "format" : "model",
     "displayName" : "ying.usdz"
+  },
+  {
+    "libraryIdentifier" : "b76441403ac248daf556022a8ac69066",
+    "format" : "audio",
+    "displayName" : "relaxing-ambient-music.wav"
   }
 ]
